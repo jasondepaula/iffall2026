@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcf8ff;
+  color: #2b003a;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 60rem; 
+  padding-bottom: 2rem;
+}
+
+/*ask jack or sergio img brk*/
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4a0072;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #4a0072;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e1bee7;
+  padding-bottom: 0.25rem;
+}
+
+.site-title {
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: #7b1fa2;
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+
+.recipe-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.recipe-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  background-color: #f3e5f5;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-about {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.ingredients ul {
+  list-style: none; 
+}
+
+.ingredients li {
+  margin-bottom: 0.75rem;
+}
+
+.ingredients input[type="checkbox"] {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.instructions ol {
+  margin-left: 1.5rem;
+}
+
+.instructions li {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #7b1fa2;
+  border-top: 1px solid #e1bee7;
+  padding-top: 1rem;
+}
+
+@media (min-width: 640px) {
+    .recipe-content {
+    display: flex;
+    gap: 3rem;
+  }
+  .ingredients {
+    width: 35%;
+  }
+  .instructions {
+    width: 65%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
