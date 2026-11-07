@@ -1,0 +1,96 @@
+body {
+	font-family: Arial, Sans-serif;
+	font-size: 12pt;
+	line-height: 1.4;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	margin-top: 2em;
+	color: #077bca;
+}
+
+section:not(:first-child) {
+	border-top: 1px dashed #077bca;
+}
+
+code {
+	color: #077bca;
+}
+
+aside {
+	color: #077bca;
+}
+
+body {
+	width: 800px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+	body {
+		background-color: #eaf6ff;
+	}
+}
+
+@media (max-width: 499px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 641px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+}
+
+/*fixed*/
+
+#fixed-size-grid-items ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+}
+
+#fixed-size-grid-items li {
+	list-style: none;
+}
+
+#fixed-size-grid-items aside {
+	width: 170px;
+	margin: 10px;
+	font-size: 0.8rem;
+}
+
+/*strtetch*/
+
+#stretchable-grid-items ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin: 1rem -10px;
+}
+
+#stretchable-grid-items li {
+	list-style: none;
+	width: 100%;
+}
+
+#stretchable-grid-items aside {
+	margin: 10px;
+	font-size: 0.8rem;
+}
+
+@media (min-width: 481px) {
+	#stretchable-grid-items li {
+		width: 50%;
+	}
+}
+
+@media (min-width: 641px) {
+	#stretchable-grid-items li {
+		width: 25%;
+	}
+}
